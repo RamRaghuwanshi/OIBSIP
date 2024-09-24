@@ -6,7 +6,6 @@ root=Tk()
 root.title("Calculator")
 root.geometry("300x400")
 
-# Entry widget for calculation result
 entry = Entry(root, width=16, font=("Arial", 24), borderwidth=2, relief="groove")
 entry.grid(row=0, column=0, columnspan=4)
 
@@ -26,7 +25,6 @@ def calculate():
     except Exception as e:
         showinfo("Error", "Invalid Input")
 
-# Calculator buttons
 buttons = [
     '7', '8', '9', '/',
     '4', '5', '6', '*',
